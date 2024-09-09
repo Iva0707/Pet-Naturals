@@ -1,0 +1,264 @@
+@media screen and (min-width: 576px) {
+
+/* __________header__________ */
+    .header {
+        padding: 29px 0;
+    }
+
+    .header__logo {
+        height: 70px;
+        img {
+            max-height: 70px;
+        }
+    }
+
+    .header__logo::after {
+        height: calc(100% + 20px);
+        width: calc(100% + 40px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__row {
+        flex-direction: row;
+    }
+
+/* __________hero__________ */
+    .hero {
+        height: calc(100vh - 128px);
+    }
+
+    .hero__title {
+        margin: 0 auto 8px;
+        line-height: 1.2;
+        max-width: 578px;
+        margin: 0 auto 20px;
+    }
+
+    .hero__row {
+        flex-direction: row;
+        align-items: end;
+        gap: 0;
+    }
+
+    .content {
+        max-width: 49%;
+    }
+
+    .content__description {
+        margin-bottom: 60px;
+    }
+
+    .content__list {
+        max-width: 323px;
+        padding: 38px 35px;
+        border-radius: 20px;
+    }
+
+    .content__item {
+        margin-bottom: 20px;
+    }
+
+    .form {
+        padding: 23px 24px;
+        max-width: 49%;
+    }
+
+    .form__pentagon-wrapper {
+        margin: -24px -24px 20px -24px;
+    }
+
+    .form__pentagon {
+        padding: 26px 24px 36px;
+    }
+
+    .form__title {
+        margin-bottom: 16px;
+    }
+
+    .form__row {
+        max-width: 100%;
+    }
+
+    form {
+        gap: 15px;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .form__btn {
+        margin-bottom: 30px;
+    }
+
+/* __________about__________ */
+    .about__item {
+        flex: 1 1 305px;
+    }
+
+    .about__img-box {
+        height: 179px;
+    }
+
+    .about__subtitle {
+        font-size: 1.37rem;
+        margin-bottom: 22px;
+    }
+
+    .about__description {
+        font-size: 1.12rem;
+    }
+
+/* __________results__________ */
+    .results {
+        padding: 105px 0 197px;
+    }
+
+    .results__title {
+        margin-bottom: 62px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* __________header__________ */
+    .header__logo {
+        height: 70px;
+        img {
+            max-height: 70px;
+        }
+    }
+
+    .header__logo::after {
+        height: calc(100% + 20px);
+        width: calc(100% + 40px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    nav::after {
+        position: absolute;
+        content: '';
+        background: url(../images/header_cloud_nav.png) center top/cover no-repeat;
+        height: 91px;
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        z-index: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .header__nav {
+        display: flex;
+        height: 77px;
+    }
+
+    /* __________hero__________ */
+    .hero {
+        height: calc(100vh - 135px);
+    }
+
+    .content {
+        max-width: 439px;
+    }
+
+    .form {
+        max-width: 270px;
+    }
+
+    /* __________about__________ */
+    .about__title {
+        margin-bottom: 65px;
+    }
+
+    /* __________results__________ */
+    .results__row {
+        flex-direction: row;
+        padding: 0 29px;
+        gap: 50px;
+    }
+
+    .results__content {
+        width: 53vw;
+        max-width: 685px;
+        border-right: none;
+    }
+
+    .results__content::before,
+    .results__content::after {
+        content: '';
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* __________header__________ */
+    .header__logo {
+        height: 89px;
+        img {
+            max-height: 89px;
+        }
+    }
+
+    .header__logo::after {
+        height: calc(100% + 20px);
+        width: calc(100% + 40px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav::after {
+        height: 100%;
+        width: 100%;
+    }
+
+    .header__nav {
+        height: 108px;
+    }
+
+    /* __________hero__________ */
+    .hero {
+        height: calc(100vh - 166px);
+    }
+
+    .hero__img-box {
+        display: flex;
+    }
+
+    /* __________about__________ */
+    .about {
+        padding: 52px 70px 38px;
+    }
+
+    .about__bg {
+        padding: 48px 0 62px;
+    }
+
+    .about__row {
+        flex-direction: row;
+        padding: 0 29px;
+        gap: 8%;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    body {
+        background-size: 100% 750px;
+    }
+
+    body::after {
+        height: 750px;
+    }
+
+    .hero {
+        height: 100%;
+    } 
+
+    .hero__title {
+        margin: 0 auto 0px;
+    }
+
+    .header {
+        padding: 29px 0 5px;
+    }
+}

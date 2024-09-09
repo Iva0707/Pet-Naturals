@@ -1,0 +1,90 @@
+/* __________fonts__________ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* __________global__________ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+input {
+    border: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+::selection {
+    color: #537d13;
+    background: #f9e994;
+}
+
+.img_fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title {
+    width: 100%;
+    font-weight: 700;
+    font-size: 3.25rem;
+    text-align: center;
+    background: linear-gradient(180deg, #f9e994 0%, #537d13 56.25%, #483c08 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* __________media__________ */
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        max-width: 1202px;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1202px;
+        padding: 0 30px;
+    }
+}
